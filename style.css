@@ -9,12 +9,9 @@ body {
 
 /* Main container */
 .container {
-    max-width: 800px;
-    background: white;
-    padding: 20px;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Ensure the box fits the screen width */
+    overflow: hidden; /* Prevent any overflow from spilling */
+    margin: 0 auto; /* Center the main container */
 }
 
 /* Profile Section */
@@ -46,30 +43,34 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Publications Section */
+.publications {
+    max-width: 800px; /* Set a consistent width for the section */
+    margin: auto; /* Center the content horizontally */
+    padding: 20px; /* Add padding for readability */
+    overflow: hidden; /* Prevent content overflow */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
 .publication-item {
     display: flex;
-    align-items: center; /* Align image & text vertically */
-    gap: 15px; /* Space between image & text */
-    max-width: 100px; /* Prevents content from stretching */
+    align-items: flex-start; /* Align images and text properly */
+    gap: 15px; /* Space between image and text */
     margin-bottom: 20px; /* Space between publications */
+    flex-wrap: wrap; /* Prevent content from overflowing */
 }
 
-/* Publication Images */
-/* Ensure publication images resize properly */
-.pub-image {
-    width: 120px; /* Adjust as needed */
-    max-width: 100%; /* Prevents oversized images */
-    height: auto; /* Maintains aspect ratio */
-    border-radius: 8px; /* Optional rounded corners */
-    display: block; /* Fixes layout issues */
-}
-
-/* Publication Text */
 .pub-details {
-    flex: 1; /* Ensures text takes remaining space */
-    font-size: 16px;
+    flex: 1; /* Allow the text to stretch and fill the container */
+    word-wrap: break-word; /* Ensure long text breaks to the next line */
 }
+
+.pub-image {
+    width: 120px; /* Set a consistent image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional rounded corners */
+    display: block;
+}
+
 
 /* Footer */
 footer {
