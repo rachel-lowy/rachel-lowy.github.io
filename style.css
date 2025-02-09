@@ -10,7 +10,7 @@ body {
 
 /* Main container */
 .container {
-    max-width: 800px; /* Keeps it centered and prevents trailing */
+    max-width: 1000px; /* Keeps it centered and prevents trailing */
     width: 90%; /* Ensures responsiveness */
     margin: 0 auto; /* Centers the content */
     overflow: hidden; /* Prevents overflow issues */
