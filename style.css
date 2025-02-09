@@ -59,6 +59,7 @@ footer {
     display: flex;
     align-items: center; /* Align image & text vertically */
     gap: 15px; /* Space between image & text */
+    max-width: 100px; /* Prevents content from stretching */
     margin-bottom: 20px; /* Space between publications */
 }
 
