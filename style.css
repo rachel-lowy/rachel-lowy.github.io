@@ -46,14 +46,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding-top: 10px;
-    font-size: 14px;
-    color: #777;
-}
-
 /* Publications Section */
 .publication-item {
     display: flex;
@@ -78,4 +70,13 @@ footer {
     flex: 1; /* Ensures text takes remaining space */
     font-size: 16px;
 }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+    color: #777;
+}
+
 
