@@ -5,20 +5,25 @@ body {
     margin: 20px;
     padding: 0;
     background-color: #f9f9f9;
+    text-align: center; /* Centers everything by default */
 }
 
 /* Main container */
 .container {
-    max-width: 100%; /* Ensure the box fits the screen width */
-    overflow: hidden; /* Prevent any overflow from spilling */
-    margin: 0 auto; /* Center the main container */
+    max-width: 800px; /* Keeps it centered and prevents trailing */
+    width: 90%; /* Ensures responsiveness */
+    margin: 0 auto; /* Centers the content */
+    overflow: hidden; /* Prevents overflow issues */
+    text-align: left; /* Reset text alignment for inner elements */
 }
 
 /* Profile Section */
 .profile {
     display: flex;
     align-items: center;
+    justify-content: center; /* Centers content horizontally */
     margin-bottom: 20px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
 .profile-pic {
@@ -31,6 +36,7 @@ body {
 /* Bio & Research Styling */
 .bio, .research, .classes, .publications {
     margin-bottom: 20px;
+    text-align: justify; /* Justifies text */
 }
 
 /* Links */
@@ -78,6 +84,26 @@ footer {
     padding-top: 10px;
     font-size: 14px;
     color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin: 0 auto 10px;
+    }
+
+    .publication-item {
+        flex-wrap: wrap; /* Allows text to drop under the image */
+    }
+
+    .pub-image {
+        width: 100px;
+    }
 }
 
 
