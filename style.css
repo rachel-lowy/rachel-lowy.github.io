@@ -47,7 +47,6 @@ a:hover {
     max-width: 800px; /* Set a consistent width for the section */
     margin: auto; /* Center the content horizontally */
     padding: 20px; /* Add padding for readability */
-    overflow: hidden; /* Prevent content overflow */
     box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
@@ -56,12 +55,14 @@ a:hover {
     align-items: flex-start; /* Align images and text properly */
     gap: 15px; /* Space between image and text */
     margin-bottom: 20px; /* Space between publications */
-    flex-wrap: wrap; /* Prevent content from overflowing */
+    flex-wrap: nowrap; /* Prevent text from dropping below the image */
 }
 
 .pub-details {
-    flex: 1; /* Allow the text to stretch and fill the container */
-    word-wrap: break-word; /* Ensure long text breaks to the next line */
+    flex: 1; /* Ensure text takes up available space */
+    word-wrap: break-word; /* Wrap long text properly */
+    line-height: 1.5; /* Improve text readability */
+    margin: 0; /* Remove extra margin */
 }
 
 .pub-image {
@@ -70,7 +71,6 @@ a:hover {
     border-radius: 8px; /* Optional rounded corners */
     display: block;
 }
-
 
 /* Footer */
 footer {
