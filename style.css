@@ -63,10 +63,13 @@ footer {
 }
 
 /* Publication Images */
+/* Ensure publication images resize properly */
 .pub-image {
-    width: 50px; /* Adjust as needed */
-    height: auto; /* Keep aspect ratio */
-    border-radius: 8px; /* Optional: Rounded corners */
+    width: 120px; /* Adjust as needed */
+    max-width: 100%; /* Prevents oversized images */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Optional rounded corners */
+    display: block; /* Fixes layout issues */
 }
 
 /* Publication Text */
