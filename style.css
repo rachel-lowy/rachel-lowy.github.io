@@ -64,7 +64,7 @@ footer {
 
 /* Publication Images */
 .pub-image {
-    width: 100px; /* Adjust as needed */
+    width: 50px; /* Adjust as needed */
     height: auto; /* Keep aspect ratio */
     border-radius: 8px; /* Optional: Rounded corners */
 }
