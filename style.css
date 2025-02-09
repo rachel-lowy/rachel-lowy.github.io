@@ -53,3 +53,25 @@ footer {
     font-size: 14px;
     color: #777;
 }
+
+/* Publications Section */
+.publication-item {
+    display: flex;
+    align-items: center; /* Align image & text vertically */
+    gap: 15px; /* Space between image & text */
+    margin-bottom: 20px; /* Space between publications */
+}
+
+/* Publication Images */
+.pub-image {
+    width: 100px; /* Adjust as needed */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 8px; /* Optional: Rounded corners */
+}
+
+/* Publication Text */
+.pub-details {
+    flex: 1; /* Ensures text takes remaining space */
+    font-size: 16px;
+}
+
