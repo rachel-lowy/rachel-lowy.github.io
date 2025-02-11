@@ -8,49 +8,6 @@ body {
     text-align: center; /* Centers everything by default */
 }
 
-/* Ensure contact links are on the same line */
-.contact-links {
-    display: flex;  /* Makes links appear in a row */
-    gap: 20px;  /* Adds spacing between icons */
-    flex-wrap: wrap; /* Wraps items if screen is too small */
-}
-
-/* General styles for contact links */
-.contact-link {
-    display: flex;
-    align-items: center;
-    font-size: 1.2em; /* Adjusts based on screen size */
-    text-decoration: none;
-    color: #0073b1; /* LinkedIn blue */
-}
-
-/* Responsive icon sizing */
-.contact-link i {
-    font-size: 1.5em;
-    margin-right: 8px;
-}
-
-/* Adjust sizes for smaller screens */
-@media (max-width: 768px) {
-    .contact-link {
-        font-size: 1em;
-    }
-    .contact-link i {
-        font-size: 1.2em;
-    }
-}
-
-/* Adjust sizes for larger screens */
-@media (min-width: 1200px) {
-    .contact-link {
-        font-size: 1.4em;
-    }
-    .contact-link i {
-        font-size: 1.8em;
-    }
-}
-
-
 /* Main container */
 .container {
     max-width: 1000px; /* Keeps it centered and prevents trailing */
@@ -67,14 +24,61 @@ body {
     justify-content: center; /* Centers content horizontally */
     margin-bottom: 20px;
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    text-align: left; /* Ensures content aligns properly */
 }
 
+/* Profile Picture */
 .profile-pic {
-    width: 200px;
+    width: 180px;
     height: auto;
     border-radius: 10px;
     margin-right: 20px;
 }
+
+/* Information Section */
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Spacing between text elements */
+}
+
+/* Contact Icons Section */
+.contact-icons {
+    display: flex;
+    gap: 15px; /* Space between icons */
+    font-size: 1.5em; /* Default size for medium screens */
+    margin-top: 5px;
+}
+
+/* Contact Icon Links */
+.contact-icons a {
+    color: #0073b1; /* LinkedIn blue */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-icons a:hover {
+    color: #005582; /* Darker blue on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin: 0 auto 10px;
+    }
+
+    .contact-icons {
+        justify-content: center; /* Centers icons on smaller screens */
+        font-size: 1.3em; /* Slightly smaller icons */
+        gap: 12px;
+    }
+}
+
 
 /* Bio & Research Styling */
 .bio, .research, .classes, .publications {
