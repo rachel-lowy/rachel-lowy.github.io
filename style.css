@@ -8,6 +8,49 @@ body {
     text-align: center; /* Centers everything by default */
 }
 
+/* Ensure contact links are on the same line */
+.contact-links {
+    display: flex;  /* Makes links appear in a row */
+    gap: 20px;  /* Adds spacing between icons */
+    flex-wrap: wrap; /* Wraps items if screen is too small */
+}
+
+/* General styles for contact links */
+.contact-link {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em; /* Adjusts based on screen size */
+    text-decoration: none;
+    color: #0073b1; /* LinkedIn blue */
+}
+
+/* Responsive icon sizing */
+.contact-link i {
+    font-size: 1.5em;
+    margin-right: 8px;
+}
+
+/* Adjust sizes for smaller screens */
+@media (max-width: 768px) {
+    .contact-link {
+        font-size: 1em;
+    }
+    .contact-link i {
+        font-size: 1.2em;
+    }
+}
+
+/* Adjust sizes for larger screens */
+@media (min-width: 1200px) {
+    .contact-link {
+        font-size: 1.4em;
+    }
+    .contact-link i {
+        font-size: 1.8em;
+    }
+}
+
+
 /* Main container */
 .container {
     max-width: 1000px; /* Keeps it centered and prevents trailing */
