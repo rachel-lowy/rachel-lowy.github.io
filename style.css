@@ -83,7 +83,7 @@ body {
 /* Bio & Research Styling */
 .bio, .research, .classes, .publications {
     margin-bottom: 20px;
-    text-align: justify; /* Justifies text */
+    text-align: left; /* left-aligns text */
 }
 
 /* Links */
